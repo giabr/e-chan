@@ -1,5 +1,0 @@
-.social{
-
-  text-align: right;
-}
-
