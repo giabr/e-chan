@@ -1,4 +1,12 @@
 <?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Kreait\Firebase\Factory;
+use Kreait\Firebase\ServiceAccount;
+
+$firebase = (new Factory)->create();
+
 $host = "host = ec2-23-21-201-12.compute-1.amazonaws.com";
 $user = "user = bqgtvmqhgoocpi";
 $password = "password = 2302bdf02990ee73a5a3f718a2b0ca280f65f27f62ef67e6b3850e05c1eceb37";
@@ -74,7 +82,8 @@ if($db){
     <link href="../css/responsive.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <!-- logo -->
-    <link rel="shortcut icon" href="../images/ico/echan2.png">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 	
 </head>
